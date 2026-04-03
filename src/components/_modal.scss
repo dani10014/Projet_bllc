@@ -1,0 +1,22 @@
+@use "../components/variaveis";
+
+
+.modal{
+    backdrop-filter: blur(2px);
+    padding:45px ;
+    position: fixed;
+    .modal-dialog{
+        margin: 0 auto;
+    }
+    .modal-content{
+        border-color: variaveis.$corPrincipal;
+        transition: transform 0.3s ease-in-out, opacity 0.3s linear;
+        .modal-body{
+            background-color: variaveis.$corPrincipal;
+            color:variaveis.$corTexto;
+            .modal-footer{
+                background-color: variaveis.$corSecundaria;
+            }
+        }
+    }
+}

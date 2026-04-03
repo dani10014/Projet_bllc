@@ -1,0 +1,23 @@
+@use "../components/variaveis";
+@use "../components/fontes";
+
+#secao-principal-welcome{
+    background-image:url("../../../src/img/fundo-de-cor-roxa-gradiente-desenhos-abstratos-de-ondas-modernas_343694-2361.avif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+
+    .texto-principal-bem-vindo{
+    padding-top: 20px;
+        h2{
+        color: variaveis.$corTexto;
+        @include fontes.fonteP;
+        margin-bottom: 0;
+    }
+        p{
+        color: variaveis.$corTexto;
+        font-size: 1rem;
+        
+    }
+}
+}

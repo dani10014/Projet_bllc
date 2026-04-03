@@ -1,0 +1,14 @@
+.avatar{
+    position: absolute;
+    display: none;
+    width: 180px;
+    transition: all 0.3s ease-in-out;
+    top:240px;
+    left: 0px;
+    img{
+        width: 100%;
+    }
+}
+.ativo{
+    display: block;
+}

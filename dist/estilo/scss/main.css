@@ -1,0 +1,102 @@
+header {
+  background-color: purple;
+  color: #fff;
+  padding: 15px;
+  border-bottom: 1px solid #fff;
+  box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.829);
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+h1 {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+span {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: rgb(77, 3, 3);
+  -webkit-text-stroke: 0.5px #313131;
+  transform: translateX(-10px);
+}
+
+ul li a {
+  font-size: 1.2rem;
+  font-family: "Smooch Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  color: #fff;
+  text-decoration: none;
+}
+ul li a:hover {
+  border-bottom: 2px solid #fff;
+}
+
+.modal {
+  backdrop-filter: blur(2px);
+  padding: 45px;
+  position: fixed;
+}
+.modal .modal-dialog {
+  margin: 0 auto;
+}
+.modal .modal-content {
+  border-color: purple;
+  transition: transform 0.3s ease-in-out, opacity 0.3s linear;
+}
+.modal .modal-content .modal-body {
+  background-color: purple;
+  color: #fff;
+}
+.modal .modal-content .modal-body .modal-footer {
+  background-color: black;
+}
+
+#secao-principal-welcome {
+  background-image: url("../../../src/img/fundo-de-cor-roxa-gradiente-desenhos-abstratos-de-ondas-modernas_343694-2361.avif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+}
+#secao-principal-welcome .texto-principal-bem-vindo {
+  padding-top: 20px;
+}
+#secao-principal-welcome .texto-principal-bem-vindo h2 {
+  color: #fff;
+  font-family: "Smooch Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 0;
+}
+#secao-principal-welcome .texto-principal-bem-vindo p {
+  color: #fff;
+  font-size: 1rem;
+}
+
+.avatar {
+  position: absolute;
+  display: none;
+  width: 180px;
+  transition: all 0.3s ease-in-out;
+  top: 240px;
+  left: 0px;
+}
+.avatar img {
+  width: 100%;
+}
+
+.ativo {
+  display: block;
+}
+
+body main {
+  padding-top: 50px;
+}

@@ -1,0 +1,12 @@
+@use "../components/header";
+@use "../components/variaveis";
+@use "../components/modal";
+@use "../components/texto-boas-vindas";
+@use "../components/fontes";
+@use "../components/avatar-ruiva";
+
+body{
+    main{
+        padding-top: 50px;
+    }
+}

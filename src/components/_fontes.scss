@@ -1,0 +1,15 @@
+
+@mixin fonteH2{
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+@mixin fonteP{
+    font-family: "Smooch Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    color:#fff;
+    text-decoration:none;
+}
