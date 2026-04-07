@@ -97,6 +97,32 @@ ul li a:hover {
   display: block;
 }
 
+.texto-principais-topicos {
+  color: #000000;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+.container .row .carrosel-cards .slick-slide {
+  padding: 0 10px;
+}
+.container .row .carrosel-cards .slick-slide .card {
+  background-color: purple;
+  height: 200px;
+}
+.container .row .carrosel-cards .slick-slide .card h6 {
+  padding-top: 5px;
+  color: #fff;
+  text-transform: capitalize;
+}
+.container .row .carrosel-cards .slick-slide .card .card-body {
+  color: #fff;
+  background-color: #fff;
+  margin: 5px;
+}
+
 body main {
-  padding-top: 50px;
+  margin-top: 50px;
 }

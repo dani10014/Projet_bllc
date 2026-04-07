@@ -1,0 +1,1 @@
+function iniciarLoopPersonagem(){}export{iniciarLoopPersonagem};

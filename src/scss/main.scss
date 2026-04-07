@@ -4,9 +4,11 @@
 @use "../components/texto-boas-vindas";
 @use "../components/fontes";
 @use "../components/avatar-ruiva";
+@use "../components/texto-principais-topicos";
+@use "../components/cards-principais";
 
 body{
     main{
-        padding-top: 50px;
+        margin-top: 50px;
     }
 }

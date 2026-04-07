@@ -1,0 +1,1 @@
+function initializeCarroselCards(){$(".carrosel-cards").slick({slidesToShow:2,slidesToScroll:1,arrows:!1})}export{initializeCarroselCards};

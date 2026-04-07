@@ -1,4 +1,11 @@
+import { initializeCarroselCards } from './carrosel-cards.js';
+
 document.addEventListener('DOMContentLoaded', function() {
+    
+    if(document.querySelector('.carrosel-cards')) {
+        initializeCarroselCards();
+    }
+
     const modalElemento = document.querySelector('.modal');
     const avatarElemento = document.querySelector('.avatar');
 

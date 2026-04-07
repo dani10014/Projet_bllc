@@ -1,0 +1,6 @@
+@use "../components/fontes";
+
+.texto-principais-topicos{
+    color: #000000;
+    @include fontes.fonteH2;
+}

@@ -1,0 +1,23 @@
+@use "../components/variaveis";
+.container .row{
+    .carrosel-cards .slick-slide {
+        padding: 0 10px;
+
+    .card{
+        background-color: variaveis.$corPrincipal;
+        height: 200px;
+
+        h6{
+            padding-top:5px;
+            color: variaveis.$corTexto;
+            text-transform:capitalize;
+        }
+
+        .card-body{
+            color: variaveis.$corTexto;
+            background-color: variaveis.$corTexto;
+            margin: 5px;
+        } 
+    }
+    }
+}     
