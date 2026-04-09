@@ -1,23 +1,53 @@
-@use "../components/variaveis";
-.container .row{
-    .carrosel-cards .slick-slide {
-        padding: 0 10px;
+@use "variaveis"; // Se estiverem na mesma pasta, não precisa do ../components/
+@use "animacoes";
 
-    .card{
-        background-color: variaveis.$corPrincipal;
-        height: 200px;
+.container {
+    .row {
+        // Estilo dos slides individuais
+        .carrosel-cards .slick-slide {
+            padding: 10px 10px;
+        } // <--- FECHEI AQUI O SLIDE
 
-        h6{
-            padding-top:5px;
-            color: variaveis.$corTexto;
-            text-transform:capitalize;
+        // Estilo do Card
+        .card {
+            @include animacoes.hover-efeito; // Namespace da animação
+            background-color: variaveis.$corPrincipal;
+            height: 200px;
+            border: none; // Evita bordas estranhas que causam scroll
+
+            h6 {
+                padding-top: 5px;
+                color: variaveis.$corTexto;
+                text-transform: capitalize;
+            }
+
+            img {
+                width: 100%;
+                height: 156px;
+                object-fit: cover; // Garante que a imagem não distorça
+            }
+
+            .card-body {
+                background-color: variaveis.$corTexto;
+                margin: 5px;
+                padding: 0;
+            }
         }
-
-        .card-body{
-            color: variaveis.$corTexto;
-            background-color: variaveis.$corTexto;
-            margin: 5px;
-        } 
+        .corpo-card-personagem {
+            background-image: url("../../../src/img/pixlr-nano-banana-69d508d806ebab391221081b.jpg");
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: center; // Deixa a imagem mais escura para destacar o texto
+            .botao-iniciar{
+                text-align: center;
+                backdrop-filter: brightness(0.5); 
+                height: 100%;// Deixa a área do botão mais escura para destacar o texto
+                h6{
+                    padding-top: 40px;
+                    padding-left: 5px;
+                    padding-right: 5px;
+                }
+            }
+        }
     }
-    }
-}     
+}

@@ -4,5 +4,6 @@ export function initializeCarroselCards() {
             slidesToShow: 2,
             slidesToScroll: 1,
             arrows:false,
+            dots:true,
         })
 }

@@ -6,9 +6,13 @@
 @use "../components/avatar-ruiva";
 @use "../components/texto-principais-topicos";
 @use "../components/cards-principais";
+@use "../components/animacoes";
+@use "../components/footer";
 
 body{
+    height: 100vh;
     main{
         margin-top: 50px;
+        overflow-x: hidden;
     }
 }
