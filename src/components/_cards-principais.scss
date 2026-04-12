@@ -1,5 +1,6 @@
 @use "variaveis"; // Se estiverem na mesma pasta, não precisa do ../components/
 @use "animacoes";
+@use "fontes";
 
 .container {
     .row {
@@ -34,7 +35,7 @@
             }
         }
         .corpo-card-personagem {
-            background-image: url("../../../src/img/pixlr-nano-banana-69d508d806ebab391221081b.jpg");
+            transition: all 0.5s ease-in-out;
             background-size: 100%;
             background-repeat: no-repeat;
             background-position: center; // Deixa a imagem mais escura para destacar o texto
@@ -48,6 +49,58 @@
                     padding-right: 5px;
                 }
             }
+        }
+        .corpo-card-quiz {
+            background-image: url("../../../src/img/personagens/Gemini_Generated_Image_5ofr1m5ofr1m5ofr.png");
+            transition: all 0.5s ease-in-out;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: center; // Deixa a imagem mais escura para destacar o texto
+            .botao-iniciar{
+                text-align: center;
+                backdrop-filter: brightness(0.5); 
+                height: 100%;// Deixa a área do botão mais escura para destacar o texto
+                h6{
+                    padding-top: 40px;
+                    padding-left: 5px;
+                    padding-right: 5px;
+                }
+            }
+        }
+        .corpo-card-quebra-cabeca {
+            background-image: url("../../../src/img/personagens/Gemini_Generated_Image_7hctdy7hctdy7hct.png");
+            transition: all 0.5s ease-in-out;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: center; // Deixa a imagem mais escura para destacar o texto
+            .botao-iniciar{
+                text-align: center;
+                backdrop-filter: brightness(0.5); 
+                height: 100%;// Deixa a área do botão mais escura para destacar o texto
+                h6{
+                    padding-top: 40px;
+                    padding-left: 5px;
+                    padding-right: 5px;
+                }
+            }
+        }
+    }
+}
+.card-principal-jogos{
+    display: none;
+    transition: all 0.5s ease-in-out;
+    transform: translateY(120%);
+    z-index: 11;
+    display: block;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    background-color: black;
+    .cabecalho{
+        background-color: variaveis.$corPrincipal;
+        h2{
+            @include fontes.fonteP;
         }
     }
 }

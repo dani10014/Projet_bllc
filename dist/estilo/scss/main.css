@@ -6,6 +6,7 @@ header {
   box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.829);
   position: fixed;
   width: 100%;
+  z-index: 10;
   top: 0;
 }
 
@@ -136,7 +137,7 @@ ul li a:hover {
   padding: 0;
 }
 .container .row .corpo-card-personagem {
-  background-image: url("../../../src/img/pixlr-nano-banana-69d508d806ebab391221081b.jpg");
+  transition: all 0.5s ease-in-out;
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -150,6 +151,64 @@ ul li a:hover {
   padding-top: 40px;
   padding-left: 5px;
   padding-right: 5px;
+}
+.container .row .corpo-card-quiz {
+  background-image: url("../../../src/img/personagens/Gemini_Generated_Image_5ofr1m5ofr1m5ofr.png");
+  transition: all 0.5s ease-in-out;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.container .row .corpo-card-quiz .botao-iniciar {
+  text-align: center;
+  backdrop-filter: brightness(0.5);
+  height: 100%;
+}
+.container .row .corpo-card-quiz .botao-iniciar h6 {
+  padding-top: 40px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.container .row .corpo-card-quebra-cabeca {
+  background-image: url("../../../src/img/personagens/Gemini_Generated_Image_7hctdy7hctdy7hct.png");
+  transition: all 0.5s ease-in-out;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.container .row .corpo-card-quebra-cabeca .botao-iniciar {
+  text-align: center;
+  backdrop-filter: brightness(0.5);
+  height: 100%;
+}
+.container .row .corpo-card-quebra-cabeca .botao-iniciar h6 {
+  padding-top: 40px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.card-principal-jogos {
+  display: none;
+  transition: all 0.5s ease-in-out;
+  transform: translateY(120%);
+  z-index: 11;
+  display: block;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  background-color: black;
+}
+.card-principal-jogos .cabecalho {
+  background-color: purple;
+}
+.card-principal-jogos .cabecalho h2 {
+  font-family: "Smooch Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  color: #fff;
+  text-decoration: none;
 }
 
 .menu-footer {

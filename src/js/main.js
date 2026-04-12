@@ -1,9 +1,17 @@
 import { initializeCarroselCards } from './carrosel-cards.js';
+import { iniciarLoopPersonagem } from './mudança-de-personagem.js';
+import { iniciarCardJogos } from './cards-jogos.js';
 
 document.addEventListener('DOMContentLoaded', function() {
     
     if(document.querySelector('.carrosel-cards')) {
         initializeCarroselCards();
+    }
+    if(document.querySelector('.corpo-card-personagem')) {
+        iniciarLoopPersonagem();
+    }
+    if(document.querySelector('.botao-iniciar button')) {
+        iniciarCardJogos();
     }
 
     const modalElemento = document.querySelector('.modal');
