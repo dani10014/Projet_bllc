@@ -136,13 +136,13 @@ ul li a:hover {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   padding-top: 5px;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   color: #fff;
   text-transform: capitalize;
 }
 .container .row .card img {
   width: 100%;
-  height: 156px;
+  height: 157px;
   object-fit: cover;
 }
 .container .row .card .card-body {
