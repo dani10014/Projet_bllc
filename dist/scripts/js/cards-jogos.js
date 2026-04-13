@@ -1,1 +1,12 @@
-let botaoIniciar=document.querySelectorAll(".botao-iniciar button"),cardDoJogo=document.querySelector(".card-principal-jogos");function iniciarCardJogos(){botaoIniciar.forEach(t=>{t.addEventListener("click",function(){var o=t.closest(".card").querySelector("h6").textContent.trim();cardDoJogo.querySelector("h2").textContent=o,cardDoJogo.style.display="block",setTimeout(()=>{cardDoJogo.style.transform="translateY(0)"},400)})})}cardDoJogo.addEventListener("click",function(o){o.target.classList.contains("btn-close")&&(cardDoJogo.style.transform="translateY(120%)",setTimeout(()=>{cardDoJogo.style.display="none"},400))});export{iniciarCardJogos};
+let botaoIniciar=document.querySelectorAll(".botao-iniciar button"),cardDoJogo=document.querySelector(".card-principal-jogos"),corpoCardJogo=cardDoJogo.querySelector(".card-corpo-jogo");function iniciarCardJogos(){botaoIniciar.forEach(e=>{e.addEventListener("click",function(){var o=e.closest(".card").querySelector("h6").textContent.trim();cardDoJogo.querySelector("h2").textContent=o,cardDoJogo.style.display="block",setTimeout(()=>{cardDoJogo.style.transform="translateY(0)"},400),"crie seu personagem"===o&&(setTimeout(function(){Swal.fire({title:"Você entrou na seção de personagem",text:"Aqui você podera personalizar seu personagem,divirta-se !!",icon:"question",confirmButtonText:"Confirmar",background:"purple",color:"#cdd6f4"})},600),corpoCardJogo.innerHTML=`
+                                    <div class='container mt-4 px-5 d-flex flex-column justify-content-center'>
+                                        <h6 class='text-center text-light'>Bem vindo você esta montando seu personagem</h6>
+                                        <p class='text-center'>Escolha entre diversas peças de roupas para seu personagem</p>
+                                        <div class='col-12'>
+                                            <div class='card bg-light'>
+                                                <div class="card-body">
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>`)})})}cardDoJogo.addEventListener("click",function(o){o.target.classList.contains("btn-close")&&(cardDoJogo.style.transform="translateY(120%)",setTimeout(()=>{cardDoJogo.style.display="none"},400))});export{iniciarCardJogos};

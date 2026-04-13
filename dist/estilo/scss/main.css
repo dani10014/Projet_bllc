@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 header {
   background-color: purple;
   color: #fff;
@@ -11,18 +12,23 @@ header {
 }
 
 h1 {
-  font-family: "Oswald", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: weight;
-  font-style: normal;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
 }
 
 span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
   font-size: 1.5rem;
   text-transform: uppercase;
   color: rgb(77, 3, 3);
   -webkit-text-stroke: 0.5px #313131;
   transform: translateX(-10px);
+}
+
+.texto-cabecalho-span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
 }
 
 ul li a {
@@ -81,6 +87,9 @@ ul li a:hover {
   color: #fff;
   font-size: 1rem;
 }
+#secao-principal-welcome .texto-principal-bem-vindo span {
+  font-family: "Times New Roman", Times, serif;
+}
 
 .avatar {
   position: absolute;
@@ -100,10 +109,7 @@ ul li a:hover {
 
 .texto-principais-topicos {
   color: #000000;
-  font-family: "Oswald", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: weight;
-  font-style: normal;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
 .container .row .carrosel-cards .slick-slide {
@@ -122,7 +128,10 @@ ul li a:hover {
   border: none;
 }
 .container .row .card h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
   padding-top: 5px;
+  font-size: 0.9rem;
   color: #fff;
   text-transform: capitalize;
 }
@@ -221,7 +230,7 @@ ul li a:hover {
   transition: background-color 0.3s ease;
 }
 .menu-footer .botao:hover {
-  background-color: black;
+  background-color: hsl(0, 0%, 200%);
 }
 .menu-footer .botao {
   border: 0.5px solid #000000;

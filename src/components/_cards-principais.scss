@@ -4,20 +4,22 @@
 
 .container {
     .row {
-        // Estilo dos slides individuais
+        
         .carrosel-cards .slick-slide {
             padding: 10px 10px;
-        } // <--- FECHEI AQUI O SLIDE
+        }
 
-        // Estilo do Card
+        
         .card {
-            @include animacoes.hover-efeito; // Namespace da animação
+            @include animacoes.hover-efeito;
             background-color: variaveis.$corPrincipal;
             height: 200px;
-            border: none; // Evita bordas estranhas que causam scroll
+            border: none;
 
             h6 {
+                @include fontes.fonteBonita;
                 padding-top: 5px;
+                font-size: 0.9rem;
                 color: variaveis.$corTexto;
                 text-transform: capitalize;
             }
@@ -25,7 +27,7 @@
             img {
                 width: 100%;
                 height: 156px;
-                object-fit: cover; // Garante que a imagem não distorça
+                object-fit: cover;
             }
 
             .card-body {
@@ -38,11 +40,11 @@
             transition: all 0.5s ease-in-out;
             background-size: 100%;
             background-repeat: no-repeat;
-            background-position: center; // Deixa a imagem mais escura para destacar o texto
+            background-position: center;
             .botao-iniciar{
                 text-align: center;
                 backdrop-filter: brightness(0.5); 
-                height: 100%;// Deixa a área do botão mais escura para destacar o texto
+                height: 100%;
                 h6{
                     padding-top: 40px;
                     padding-left: 5px;
@@ -55,11 +57,11 @@
             transition: all 0.5s ease-in-out;
             background-size: 100%;
             background-repeat: no-repeat;
-            background-position: center; // Deixa a imagem mais escura para destacar o texto
+            background-position: center;
             .botao-iniciar{
                 text-align: center;
                 backdrop-filter: brightness(0.5); 
-                height: 100%;// Deixa a área do botão mais escura para destacar o texto
+                height: 100%;
                 h6{
                     padding-top: 40px;
                     padding-left: 5px;
@@ -72,12 +74,12 @@
             transition: all 0.5s ease-in-out;
             background-size: 100%;
             background-repeat: no-repeat;
-            background-position: center; // Deixa a imagem mais escura para destacar o texto
+            background-position: center;
             .botao-iniciar{
                 text-align: center;
                 backdrop-filter: brightness(0.5); 
-                height: 100%;// Deixa a área do botão mais escura para destacar o texto
-                h6{
+                height: 100%;
+                h6{ 
                     padding-top: 40px;
                     padding-left: 5px;
                     padding-right: 5px;
