@@ -29,7 +29,7 @@ botaoIniciar.forEach(botao => {
             },600)
 
             corpoCardJogo.innerHTML = `
-                                    <div class='container mt-4 px-5 d-flex flex-column justify-content-center'>
+                                    <div class='container mt-4 px-3 d-flex flex-column justify-content-center'>
                                         <h6 class='text-center text-light'>Bem vindo você esta montando seu personagem</h6>
                                         <p class='text-center'>Escolha entre diversas peças de roupas para seu personagem</p>
                                         <div class='col-12'>
