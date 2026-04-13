@@ -9,8 +9,10 @@ botaoIniciar.forEach(botao => {
 
         const card = botao.closest(".card")
         const jogoClicado = card.querySelector('h6').textContent.trim();
+
         cardDoJogo.querySelector("h2").textContent = jogoClicado;
 
+        document.body.style.overflow = "hidden"
         cardDoJogo.style.display = "block";
         setTimeout(() => {
             cardDoJogo.style.transform = "translateY(0)";
@@ -34,8 +36,19 @@ botaoIniciar.forEach(botao => {
                                         <p class='text-center'>Escolha entre diversas peças de roupas para seu personagem</p>
                                         <div class='col-12'>
                                             <div class='card bg-light'>
-                                                <div class="card-body">
-                                                    
+                                                <div class='card-body d-flex justify-content-center flex-column' id='card-base-personagem'>
+                                                    <div class='carrosel-cabeça justify-content-center d-flex'>
+                                                        Ola
+                                                    </div>
+
+                                                    <div class='carrosel-torso justify-content-center d-flex'>
+                                                        ola
+                                                    </div>
+
+                                                    <div class='carrosel-pernas justify-content-center d-flex'>
+                                                        ola
+                                                    </div>
+
                                                 </div>
                                             </div>
                                         </div>
@@ -46,6 +59,7 @@ botaoIniciar.forEach(botao => {
 }
 cardDoJogo.addEventListener("click",function(event){
     if(event.target.classList.contains("btn-close")){
+        document.body.style.overflow = "auto"
         cardDoJogo.style.transform = "translateY(120%)"
             setTimeout(() => {
                 cardDoJogo.style.display= "none";
