@@ -1,0 +1,1 @@
+function initializeCarroselCards(){$(".carrosel-cards").slick({slidesToShow:2,slidesToScroll:1,arrows:!1,dots:!0}),document.querySelector(".carrosel-cabeça")&&$(".carrosel-cabeça").slick({slidesToShow:1,slidesToScroll:1,arrows:!0})}export{initializeCarroselCards};

@@ -29,34 +29,42 @@ botaoIniciar.forEach(botao => {
                 color: '#cdd6f4' 
             });
             },600)
-
+        $("carrosel-roupas").slick('setPosition');
             corpoCardJogo.innerHTML = `
                                     <div class='container mt-4 px-3 d-flex flex-column justify-content-center'>
                                         <h6 class='text-center text-light'>Bem vindo você esta montando seu personagem</h6>
-                                        <p class='text-center'>Escolha entre diversas peças de roupas para seu personagem</p>
+                                        <p class='text-center text-light'>Escolha entre diversas peças de roupas para seu personagem</p>
                                         <div class='col-12'>
                                             <div class='card bg-light'>
                                                 <div class='card-body d-flex justify-content-center flex-column' id='card-base-personagem'>
-                                                    <div class='carrosel-cabeça justify-content-center d-flex'>
-                                                        Ola
-                                                    </div>
-
-                                                    <div class='carrosel-torso justify-content-center d-flex'>
-                                                        ola
-                                                    </div>
-
-                                                    <div class='carrosel-pernas justify-content-center d-flex'>
-                                                        ola
+                                                    <div class='carrosel-roupas justify-content-center d-flex'>
+                                                        <img src="../../../src/img/personagens/Gemini_Generated_Image_9sxo9c9sxo9c9sxo.png">
+                                                        <img src="../../../src/img/personagens/Gemini_Generated_Image_bd3bhxbd3bhxbd3b.png">
                                                     </div>
 
                                                 </div>
                                             </div>
+                                            <button class="btn btn-primary w-100 mt-3">Salvar roupas</button>
                                         </div>
                                     </div>`
+            initializeCarroselRoupas();
         }
     });
 });
 }
+
+function initializeCarroselRoupas() {
+    const carrosel = document.querySelector('.carrosel-roupas');
+
+    if (!carrosel) return;
+
+    $(carrosel).slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+    });
+}
+
 cardDoJogo.addEventListener("click",function(event){
     if(event.target.classList.contains("btn-close")){
         document.body.style.overflow = "auto"

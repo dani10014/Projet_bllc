@@ -227,6 +227,10 @@ ul li a:hover {
 .card-principal-jogos #card-base-personagem {
   height: 500px;
 }
+.card-principal-jogos #card-base-personagem img {
+  width: 100%;
+  height: 100%;
+}
 
 .menu-footer {
   position: fixed;
