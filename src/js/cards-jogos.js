@@ -1,3 +1,5 @@
+import {coletaDadosCard} from "./coleta-roupa-personagem.js";
+
 const botaoIniciar = document.querySelectorAll('.botao-iniciar button');
 const cardDoJogo = document.querySelector(".card-principal-jogos");
 const corpoCardJogo = cardDoJogo.querySelector(".card-corpo-jogo");
@@ -44,10 +46,11 @@ botaoIniciar.forEach(botao => {
 
                                                 </div>
                                             </div>
-                                            <button class="btn btn-primary w-100 mt-3">Salvar roupas</button>
+                                            <button class='btn btn-primary w-100 mt-3' id='botao-salvar-roupa'>Salvar roupas</button>
                                         </div>
                                     </div>`
-            initializeCarroselRoupas();
+            initializeCarroselRoupas()
+            coletaDadosCard();
         }
     });
 });

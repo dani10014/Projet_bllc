@@ -8,7 +8,7 @@ export function iniciarLoopPersonagem() {
         "../../../src/img/personagens/pixlr-nano-banana-69d508d806ebab391221081b.jpg",
         "../../../src/img/personagens/Gemini_Generated_Image_vaeqghvaeqghvaeq.png",
         "../../../src/img/personagens/Gemini_Generated_Image_t4db74t4db74t4db.png"
-    ];  
+    ];
 
     const personagemContainer = document.querySelector('.corpo-card-personagem');
 
