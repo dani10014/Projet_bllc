@@ -17,8 +17,5 @@ export function coletaDadosCard(){
                 },300)
             },800)
         },500)
-        
-        
-
     })
 }

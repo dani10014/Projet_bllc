@@ -40,4 +40,15 @@
         color: variaveis.$corTexto;
     }
 }
+.avatar-tela-inical-direita{
+    display: none;
+    position: fixed;
+    right: 20px;
+    background-color: black;
+    width: 100px;
+    height: 150px;
+    img{
+        width: 100%;
+    }
+}
 
