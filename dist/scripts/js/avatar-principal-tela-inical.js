@@ -1,1 +1,1 @@
-function renderizarAvatarPrincipal(e){var a=document.querySelector(".avatar-tela-inical-direita"),r=(a.style.display="flex",document.createElement("img"));r.src=e,a.appendChild(r)}export{renderizarAvatarPrincipal};
+function renderizarAvatarPrincipal(e){var r=document.querySelector(".avatar-tela-inical-direita");if(r){let a=r.querySelector("img");a||(a=document.createElement("img"),r.appendChild(a)),a.src!==e&&(a.src=e,console.log("Visual do avatar atualizado para:",e)),r.style.display="flex"}}export{renderizarAvatarPrincipal};

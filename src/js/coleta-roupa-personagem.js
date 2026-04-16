@@ -1,8 +1,8 @@
 export function coletaDadosCard(){
     const botaoSalvarRoupa = document.querySelector("#botao-salvar-roupa")
-    
+
     botaoSalvarRoupa.addEventListener("click",function(){
-        const roupaSelecionada = document.querySelector(".carrosel-roupas img").src
+        const roupaSelecionada = document.querySelector(".carrosel-roupas .slick-current").src
         let alertaDeSalvamento = document.querySelector(".alerta-de-salvamento-de-roupa");
 
         localStorage.setItem("roupaEscolhida",roupaSelecionada)

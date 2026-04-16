@@ -4,8 +4,15 @@ import { iniciarCardJogos } from './cards-jogos.js';
 import { renderizarAvatarPrincipal } from './avatar-principal-tela-inical.js';
 
 document.addEventListener('DOMContentLoaded', function() {
-    const roupaEscolhida = localStorage.getItem("roupaEscolhida");
     
+    setInterval(() => {
+    // 1. Puxa o valor atualizado do storage
+    const roupaAtual = localStorage.getItem("roupaEscolhida");
+
+    if (roupaAtual && document.querySelector(".avatar-tela-inical-direita")) {
+        renderizarAvatarPrincipal(roupaAtual);
+    }
+}, 1000);
 
     if(document.querySelector('.carrosel-cards')) {
         initializeCarroselCards();
@@ -15,9 +22,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     if(document.querySelector('.botao-iniciar button')) {
         iniciarCardJogos();
-    }
-    if(roupaEscolhida && document.querySelector(".avatar-tela-inical-direita")){
-        renderizarAvatarPrincipal(roupaEscolhida);
     }
 
     const modalElemento = document.querySelector('.modal');

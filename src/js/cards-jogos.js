@@ -52,6 +52,7 @@ botaoIniciar.forEach(botao => {
                                     </div>`
             initializeCarroselRoupas()
             coletaDadosCard()
+            
         }
     });
 });
